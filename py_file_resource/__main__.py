@@ -5,12 +5,12 @@
 import argparse
 import sys
 
-from file_resource import FileResource
+from py_file_resource import FileResource
 
 
 def main():
     """
-    .. program:: file_resource
+    .. program:: py_file_resource
 
     ファイルの作成 / 削除を CLI から実行する。
 
@@ -43,7 +43,7 @@ def main():
         ファイル読込時に使用する文字エンコーディングを指定する。
     """
     parser = argparse.ArgumentParser(
-        prog="file_resource", description="ファイルを作成または削除します。")
+        prog="py_file_resource", description="ファイルを作成または削除します。")
     parser.add_argument("path", help="操作対象とするファイルのパスを指定します。")
     parser.add_argument("--create", action="store_true",
                         default=False, help="ファイルを作成します。")
