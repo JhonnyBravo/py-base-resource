@@ -1,11 +1,11 @@
 """
-Unit tests for file_resource package.
+Unit tests for py_file_resource package.
 """
 import os
 import sys
 import unittest
 
-from file_resource import FileResource
+from py_file_resource import FileResource
 sys.path.insert(0, os.path.abspath('.'))
 
 
