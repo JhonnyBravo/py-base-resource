@@ -2,11 +2,9 @@
 Unit tests for py_file_resource package.
 """
 import os
-import sys
 import unittest
 
-from py_file_resource import FileResource
-sys.path.insert(0, os.path.abspath('.'))
+from py_base_resource.py_file_resource import FileResource
 
 
 class TestReadAndWrite(unittest.TestCase):
