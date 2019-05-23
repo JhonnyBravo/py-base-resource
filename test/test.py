@@ -30,7 +30,8 @@ class TestReadAndWrite(unittest.TestCase):
         """
         content = self.fr.read_content()
         self.assertEqual(2, self.fr.code)
-        self.assertEqual("Line 1\r\n", content[0])
+        self.assertEqual(
+            "Line 1", content[0].replace("\r", "").replace("\n", ""))
         self.assertEqual(1, len(content))
 
     def test2(self):
@@ -43,7 +44,8 @@ class TestReadAndWrite(unittest.TestCase):
         self.assertEqual(2, self.fr.code)
 
         content = self.fr.read_content()
-        self.assertEqual("Update Line 1\r\n", content[0])
+        self.assertEqual(
+            "Update Line 1", content[0].replace("\r", "").replace("\n", ""))
         self.assertEqual(1, len(content))
 
     def test3(self):
@@ -56,7 +58,8 @@ class TestReadAndWrite(unittest.TestCase):
         self.assertEqual(2, self.fr.code)
 
         content = self.fr.read_content()
-        self.assertEqual("Line 2\r\n", content[1])
+        self.assertEqual(
+            "Line 2", content[1].replace("\r", "").replace("\n", ""))
         self.assertEqual(2, len(content))
 
 
