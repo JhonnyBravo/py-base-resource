@@ -5,7 +5,7 @@
 import argparse
 import sys
 
-from py_file_resource import FileResource
+from py_base_resource.py_file_resource import FileResource
 
 
 def main():
