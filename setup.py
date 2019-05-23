@@ -9,17 +9,19 @@ except IOError:
 
 setup(
     name="py-file-resource",
-    version="1.0.1",
+    version="1.1.0",
     description="Python module for file management",
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
     url="https://github.com/JhonnyBravo/py-file-resource.git",
     packages=find_packages(),
     install_requires=[
-        "py_status_resource"
+        "py_status_resource",
+        "py_attribute_resource"
     ],
     dependency_links=[
-        "git+https://github.com/JhonnyBravo/py-status-resource.git#egg=py_status_resource"
+        "git+https://github.com/JhonnyBravo/py-status-resource.git#egg=py_status_resource",
+        "git+https://github.com/JhonnyBravo/py-attribute-resource.git#egg=py_attribute_resource"
     ],
     long_description=long_description,
     classifiers=[
