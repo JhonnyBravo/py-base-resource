@@ -8,12 +8,12 @@ except IOError:
     long_description = ""
 
 setup(
-    name="py-file-resource",
-    version="1.1.0",
-    description="Python module for file management",
+    name="py-base-resource",
+    version="1.0.0",
+    description="Python module for file and directory management",
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
-    url="https://github.com/JhonnyBravo/py-file-resource.git",
+    url="https://github.com/JhonnyBravo/py-base-resource.git",
     packages=find_packages(),
     install_requires=[
         "py_status_resource",
