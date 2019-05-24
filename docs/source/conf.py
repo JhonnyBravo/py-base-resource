@@ -19,14 +19,14 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'py-file-resource'
+project = u'py-base-resource'
 copyright = u'2019, Jhonny Bravo'
 author = u'Jhonny Bravo'
 
 # The short X.Y version
 version = u'1.0'
 # The full version, including alpha/beta/rc tags
-release = u'1.0.1'
+release = u'1.0.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -103,7 +103,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'py-file-resourcedoc'
+htmlhelp_basename = 'py-base-resourcedoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,7 +130,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'py-file-resource.tex', u'py-file-resource Documentation',
+    (master_doc, 'py-base-resource.tex', u'py-base-resource Documentation',
      u'Jhonny Bravo', 'manual'),
 ]
 
@@ -140,7 +140,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'py-file-resource', u'py-file-resource Documentation',
+    (master_doc, 'py-base-resource', u'py-base-resource Documentation',
      [author], 1)
 ]
 
@@ -151,8 +151,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'py-file-resource', u'py-file-resource Documentation',
-     author, 'py-file-resource', 'One line description of project.',
+    (master_doc, 'py-base-resource', u'py-base-resource Documentation',
+     author, 'py-base-resource', 'One line description of project.',
      'Miscellaneous'),
 ]
 
