@@ -4,10 +4,14 @@
 """
 import os
 
+from py_attribute_resource.py_group_resource import GroupResource
+from py_attribute_resource.py_mode_resource import ModeResource
+from py_attribute_resource.py_owner_resource import OwnerResource
+from py_base_resource import BaseResource
 from py_status_resource import StatusResource
 
 
-class DirectoryResource(StatusResource):
+class DirectoryResource(StatusResource, BaseResource):
     """
     ディレクトリの操作を管理する。
     """
@@ -68,3 +72,33 @@ class DirectoryResource(StatusResource):
             self.code = 0
 
         return files
+
+    def set_owner(self, owner_name):
+        """
+        ディレクトリの所有者を変更する。
+
+        :param str owner_name: 新しい所有者として設定するユーザの名前を指定する。
+        """
+        resource = OwnerResource(self.path)
+        resource.set_attribute(owner_name)
+        self.code = resource.code
+
+    def set_group(self, group_name):
+        """
+        ディレクトリのグループ所有者を変更する。
+
+        :param str group_name: 新しいグループ所有者として設定するグループの名前を指定する。
+        """
+        resource = GroupResource(self.path)
+        resource.set_attribute(group_name)
+        self.code = resource.code
+
+    def set_mode(self, mode):
+        """
+        ディレクトリのパーミッション設定を変更する。
+
+        :param int mode: 新しく設定するパーミッション値を 4 桁の 8 進数で指定する。
+        """
+        resource = ModeResource(self.path)
+        resource.set_attribute(mode)
+        self.code = resource.code
