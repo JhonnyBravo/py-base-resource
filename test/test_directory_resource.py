@@ -42,7 +42,7 @@ class TestDirectoryResource(unittest.TestCase):
         * Exit code equals 2
         * Array length equals number of files and directories
         """
-        dr = DirectoryResource("resources")
+        dr = DirectoryResource("test/resources")
         files = dr.get_files()
         self.assertEqual(2, dr.code)
         self.assertEqual(2, len(files))
@@ -53,7 +53,7 @@ class TestDirectoryResource(unittest.TestCase):
         """
         * If target directory is empty exit code equals 0
         """
-        dr = DirectoryResource("resources/test_dir")
+        dr = DirectoryResource("test/resources/test_dir")
         files = dr.get_files()
         self.assertEqual(0, dr.code)
         self.assertEqual(0, len(files))
