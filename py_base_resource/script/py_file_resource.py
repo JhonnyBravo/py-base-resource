@@ -26,31 +26,31 @@ def main():
 
         ファイルを削除する。
 
-    .. option:: update <content>
+    .. option:: --update <content>
 
         ファイルの内容を上書きする。
 
-    .. option:: append <content>
+    .. option:: --append <content>
 
         ファイルへ新しい文字列を追記する。
 
-    .. option:: read
+    .. option:: --read
 
         ファイルを読込み、内容をコンソールへ出力する。
 
-    .. encoding <encoding>
+    .. option:: --encoding <encoding>
 
         ファイル読込時に使用する文字エンコーディングを指定する。
 
-    .. option:: owner <user_name>
+    .. option:: --owner <user_name>
 
         ファイルの所有者を変更する。
 
-    .. option:: group <group_name>
+    .. option:: --group <group_name>
 
         ファイルのグループ所有者を変更する。
 
-    .. option:: mode <mode>
+    .. option:: --mode <mode>
 
         ファイルのパーミッション設定を変更する。
     """
