@@ -14,7 +14,7 @@ setup(
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
     url="https://github.com/JhonnyBravo/py-base-resource.git",
-    packages=find_packages(),
+    packages=find_packages(exclude=["test"]),
     install_requires=[
         "py_status_resource",
         "py_attribute_resource"
