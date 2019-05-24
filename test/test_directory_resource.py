@@ -2,7 +2,7 @@
 import os
 import unittest
 
-from py_directory_resource import DirectoryResource
+from py_base_resource.py_directory_resource import DirectoryResource
 
 
 class TestDirectoryResource(unittest.TestCase):
