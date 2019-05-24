@@ -12,17 +12,17 @@ def main():
     """
     .. program:: py_directory_resource
 
-        ディレクトリの作成 / 削除を CLI から実行する。
+    ディレクトリの作成 / 削除を CLI から実行する。
 
     .. option:: path
 
         操作対象とするディレクトリのパスを指定する。
 
-    ..option:: --create
+    .. option:: --create
 
         ディレクトリを作成する。
 
-    ..option:: --delete
+    .. option:: --delete
 
         ディレクトリを削除する。
 
@@ -34,11 +34,11 @@ def main():
 
         ディレクトリの所有者を変更する。
 
-    ..option:: --group <group_name>
+    .. option:: --group <group_name>
 
         ディレクトリのグループ所有者を変更する。
 
-    ..option:: --mode <mode>
+    .. option:: --mode <mode>
 
         ディレクトリのパーミッション設定を変更する。
     """
